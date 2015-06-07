@@ -10,4 +10,4 @@
 # /etc/securetty
 # ttyS0
 #
-qemu-system-arm -m 1024M -M versatilepb -kernel boot/vmlinuz-3.2.0-4-versatile -initrd boot/initrd.img -append "root=/dev/sda1 console=ttyAMA0,115200 console=tty  highres=off" -hda armdisk.img -redir tcp:3333::22 -nographic
+qemu-system-arm -m 1024M -M versatilepb -kernel boot/vmlinuz-3.2.0-4-versatile -initrd boot/initrd.img -append "root=/dev/sda1 console=ttyAMA0,115200 console=tty  highres=off" -hda armdisk.img -redir tcp:3333::22 -nographic #-net user,smb=/
